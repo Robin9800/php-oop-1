@@ -10,10 +10,12 @@
 class Movie{
     public $name;
     public $year;
+    public $img;
 
-    function _construct($name, $_year){
+    function _construct($name, $_year,$_img){
         $this->name = $_name;
         $this->year = $_year;
+        $this->img = $_img;
     }
 
     public function movieInfo(){
@@ -21,6 +23,7 @@ class Movie{
         <div>
             <h2>" . $this->name . "</h2>
             <p>" . $this->year . "</p>
+            <img src=". $this->img .">
         </div>
     ";
     }
@@ -29,10 +32,12 @@ class Movie{
 $film1 = new Movie();
 $film1->name = "Jurassic Park";
 $film1->year = "1993";
+$film1->img = "img\Jurassic-park.jpg";
 
 $film2 = new Movie();
 $film2->name = "Avengers";
 $film2->year = "2012";
+$film2->img = "img\avemgers.jpg";
 
 ?>
 
@@ -49,20 +54,17 @@ $film2->year = "2012";
     <div class="container">
 
         <h1>MOVIES</h1>
-
         <div class="movies">
             <div class="movie-1">
                 <?php
                     echo($film1->movieInfo());
                 ?>
-                <img src="img\Jurassic park.jpg" alt="">
             </div>
 
             <div class="movie-2">
                 <?php
                     echo($film2->movieInfo());
                 ?>
-                <img src="img\avemgers.jpg" alt="">
             </div>
 
             
