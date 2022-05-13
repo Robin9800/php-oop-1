@@ -11,15 +11,15 @@ class Movie{
     public $name;
     public $year;
 
-    function _construct($_title, $_year){
-        $this->title = $_title;
+    function _construct($name, $_year){
+        $this->name = $_name;
         $this->year = $_year;
     }
 
     public function movieInfo(){
         return "
         <div>
-            <h2>" . $this->title . "</h2>
+            <h2>" . $this->name . "</h2>
             <p>" . $this->year . "</p>
         </div>
     ";
@@ -46,9 +46,30 @@ $film2->year = "2012";
     <title>OOP</title>
 </head>
 <body>
-    <h1>MOVIE</h1>
-        <?php
-            echo($film1->movieInfo());
-        ?>
+    <div class="container">
+
+        <h1>MOVIES</h1>
+
+        <div class="movies">
+            <div class="movie-1">
+                <?php
+                    echo($film1->movieInfo());
+                ?>
+                <img src="img\Jurassic park.jpg" alt="">
+            </div>
+
+            <div class="movie-2">
+                <?php
+                    echo($film2->movieInfo());
+                ?>
+                <img src="img\avemgers.jpg" alt="">
+            </div>
+
+            
+        </div>
+    </div>
+
+        
+        
 </body>
 </html>
