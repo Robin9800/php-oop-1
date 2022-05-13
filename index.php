@@ -18,7 +18,7 @@ class Movie{
 
     public function movieInfo(){
         return "
-        <div class=\"movie\" >
+        <div>
             <h2>" . $this->title . "</h2>
             <p>" . $this->year . "</p>
         </div>
