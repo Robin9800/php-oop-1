@@ -6,7 +6,7 @@ class Movie{
 }
 
 $film1 = new Movie();
-$film1->nanme = "Jurassic Park";
+$film1->name = "Jurassic Park";
 
 $film2 = new Movie();
 $film2->name = "Avemgers";
