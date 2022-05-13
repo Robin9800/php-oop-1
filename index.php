@@ -9,7 +9,7 @@ $film1 = new Movie();
 $film1->name = "Jurassic Park";
 
 $film2 = new Movie();
-$film2->name = "Avemgers";
+$film2->name = "Avengers";
 
 
 
